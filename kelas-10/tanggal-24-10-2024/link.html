@@ -1,0 +1,205 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Link di HTML</title>
+    <style>
+      img {
+        display: block;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ======================================================================================================================================================================================================= -->
+    <!-- Link atau Hyperlink adalah elemen HTML yang berfungsi menghubungkan suatu halaman web ke halaman web yang lain.
+  Elemen ini bisa diklik.. dan nanti akan membuka halaman lain sesuai alamat URL yang diberikan. -->
+    <!-- Tidak hanya untuk menghubungkan halaman, link juga punya fungsi lain seperti scroll top, download file, menjalankan fungsi javascript, dll. -->
+
+    <!-- Link pada HTML dapa dibuat dengan tag <a>, kemudian tag ini harus memiliki atribut href untuk menentukan alamat URL tujuan dari link. -->
+
+    <img src="link-tag.png" alt="" width="600" height="400" />
+    <br />
+    <hr />
+    <br />
+    <!-- ======================================================================================================================================================================================================= -->
+    <p>
+      Untuk lebih lengkapnya, silakan buka:
+      <a href="about.html">About us</a>
+    </p>
+    <br />
+    <!-- syarat menggunakan link itu harus ada file tujuannya, jika tidak akan error, mari kita coba! -->
+    <p>
+      Untuk lebih lengkapnya, silakan buka:
+      <a href="galeri.html">galeri</a>
+      <!-- file galeri.html itu tidak ada, jadi jika kita mengisi href nya dengan galeri.html, akan terjadi error/halaman tidak ditemukan -->
+    </p>
+
+    <hr />
+    <br />
+    <!-- ======================================================================================================================================================================================================= -->
+    <h2>JENIS JENIS LINK PADA HTML</h2>
+    <ul>
+      <li>
+        <b>interal link</b>, link yang menuju ke domain atau halaman web itu
+        sendiri
+      </li>
+      <li><b>external link</b>, link yang menuju domain lain.</li>
+    </ul>
+
+    <hr />
+    <br />
+    <!-- ======================================================================================================================================================================================================= -->
+    <h1>CONTOH INTERNAL LINK</h1>
+    <h3>Selamat Datang</h3>
+    <p>
+      <a href="link.html">Home</a> | <a href="contact.html">Contact</a> |
+      <a href="about.html">About</a>
+    </p>
+    <!-- <hr /> -->
+    <p>
+      Selamat datang di websiteku. Coba klik menu di atas, maka kamu akan
+      membuka halaman yang berbeda. Semua link di atas adalah internal link.
+    </p>
+
+    <br />
+    <hr />
+    <!-- ======================================================================================================================================================================================================= -->
+    <h1>CONTOH EXTERNAL LINK</h1>
+    <!-- Cara membuat eksternal link sebenarnya sama saja seperti internal link. Perbedaannya terletak pada alamat URL yang diberikan. -->
+    <!-- Sebagai contoh.. ini adalah eksternal link yang menuju halaman youtube: -->
+
+    <a href="https://www.youtube.com/">Youtube</a>
+    <!-- Maka saat link tersebut diklik, kita akan membuka halaman youtube -->
+
+    <br />
+    <hr />
+    <!-- ======================================================================================================================================================================================================= -->
+    <h1>Atribut-atribut untuk Link</h1>
+    <p>
+      Selain atribut <b>href</b> terdapat juga beberapa atribut yang sering
+      ditambahkan pada link, seperti:
+      <b>target, title, rel, style, dan lain-lain</b>.
+    </p>
+    <h1>Menggunakan Atribut target</h1>
+    <p>
+      Atribut ini berfungsi untuk menentukan target dari pembukaan link. Ada
+      beberapa target yang biasanya digunakan:
+    </p>
+    <ul>
+      <li><b>_blank</b>, akan membuka link pada jendela atau tab baru</li>
+      <li>
+        <b>_self</b>, akan membuka link pada halaman itu sendiri (default
+        target)
+      </li>
+      <li>
+        <b>nama-frame</b>, akan membuka link pada <b>iframe</b> dengan nama
+        tertentu
+      </li>
+    </ul>
+    <br />
+    <hr />
+    <!-- ======================================================================================================================================================================================================= -->
+    <h1>Menggunakan Atribut target : blank</h1>
+    <!-- misal kita akan ambil contoh yaitu menggunakan link youtube yang tadi kita buat, lalu kita tambahkan target="_blank" -->
+    <p>
+      link ini akan menembak ke
+      <a href="https://www.youtube.com/" target="_blank">Youtube</a>, tetapi
+      akan membuka nya pada tab baru
+    </p>
+    <br />
+    <hr />
+    <!-- ======================================================================================================================================================================================================= -->
+    <h1>Menggunakan Atribut target iframe</h1>
+    <!-- Berikutnya, kita akan mencoba menampilkan link ke dalam sebuah frame. -->
+    <p>
+      <a href="https://www.petanikode.com" target="myframe">Sebuah Link</a>
+    </p>
+    <p>
+      <!-- Frame yang akan menjadi target link -->
+      <iframe name="myframe" width="600" height="400"></iframe>
+    </p>
+
+    <br />
+    <hr />
+    <!-- ======================================================================================================================================================================================================= -->
+    <h1>Menggunakan Atribut title</h1>
+    <!-- Atribut ini berfungsi untuk membuat tooltips. Tooltips adalah informasi tambahan yang akan tampil saat link disentuh pointer atau saat kita menahan tap di hp. -->
+    <p>
+      Coba hover link berikut :
+      <a href="about.html" title="Menuju ke halaman about">About us</a>
+    </p>
+
+    <br />
+    <hr />
+    <!-- ======================================================================================================================================================================================================= -->
+    <h1>Cara Mengubah Warna Link di HTML</h1>
+    <!-- sekarang kita akan mulai masuk ke styling tag a pada html -->
+    <p>
+      Warna default link adalah biru, ini bisa kita ubah dengan style CSS. Warna
+      bisa kita berikan untuk teks dan latar belakang (background).
+    </p>
+    <p>
+      Tambahkan atribut style kemudian isi dengan style css untuk mengubah
+      warna, yakni color (untuk teks) dan background-color (untuk latar).
+    </p>
+    <hr />
+    <h1>SELAMAT DATANG DI HALAMAN KU</h1>
+    <p>
+      <a href="link.html" style="color: red">Home</a> |
+      <a href="contact.html" style="color: green">Contact</a> |
+      <a href="about.html" style="color: deeppink">About</a>
+    </p>
+    <p>
+      Selamat datang di websiteku. Coba klik menu di atas, maka kamu akan
+      membuka halaman yang berbeda. Semua link di atas adalah internal link.
+    </p>
+
+    <br />
+    <hr />
+    <!-- ======================================================================================================================================================================================================= -->
+    <h1>MEMBUAT LINK ANCHOR</h1>
+    <p>
+      Link anchor adalah link yang menuju ke suatu elemen tertentu. Cara
+      kerjanya seperti saat kita mengaitkan jangkar, lalu ditarik ke sana.
+      Karena itu, dia dinamakan anchor.
+    </p>
+    <p>
+      Cara membuat link anchor adalah dengan mengisi alamat URL dengan tanda
+      pagar (#), lalu diisi dengan nama id dari elemen yang akan dituju.
+    </p>
+    <br />
+    <hr />
+    <h1>Contoh Link Anchor</h1>
+    <p>
+      Ini adalah contoh link anchor. Coba klik link ini:
+      <a href="#penutup">Meluncur ke Penutup</a> maka kamu akan dibawa ke bagian
+      penutup dari dokumen ini.
+    </p>
+    <h2>Apa itu Jangkar?</h2>
+    <p>
+      Anchor dalam bahasa indonesia artinya jangkar. Saya yakin kamu pasti
+      pernah melihat jangkar. Fungsi jangkar untuk menahan kapal agar tidak
+      hanyut. Tapi dalam HTML, fungsinya untuk membuat link yang bisa membawa
+      kita meluncur ke tujuan jangkar itu.
+    </p>
+    <p>
+      Jangkar atau anchor di HTML tidak hanya bisa digunakan pada satu dokumen
+      saja. Ia juga bisa digunakan untuk membuka dokumen lain, lalu mengaitkan
+      jangkarnya.
+    </p>
+    <p>
+      Jangkar biasanya dibuat dengan tanda pagar (#) lalu diikuti dengan nama id
+      dari elemen yang ingin dituju. Contohnya #penutup, maka link yang
+      menggunakan anchor tersebut akan mencari elemen HTML yang memiliki id
+      `penutup` dan membawa kita ke sana. Kira-kira begitulah cara kerjanya.
+    </p>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <h2 id="penutup">Akhir Kata..</h2>
+    <p>
+      Ini adalah penutup dari artikel ini, dan coba perhatikan headingnya. Di
+      sana kita menggunakan id="penutup". Maka elemen ini akan menjadi tujuan
+      dari anchor link.
+    </p>
+  </body>
+</html>
